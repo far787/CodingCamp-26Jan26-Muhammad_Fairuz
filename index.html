@@ -16,16 +16,29 @@
 <body>
     <header class="main-header p-[5px]">
         
-        <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between bg-[#009ec5] px-10 py-0 shadow-md">
-        <!--Logo-->
-        
-            <div class="logo"></div>
-        <!--Navigation-->
+        <nav class="fixed top-0 left-0 w-full z-50 bg-[#009ec5] px-6 py-4 shadow-md">
+        <div class="flex items-center justify-between">
+            
+            <div class="flex items-center">
+            <img src="https://i.pinimg.com/736x/98/b8/39/98b839789d39640c724decb8dbc824e5.jpg" alt="Logo KANTO" class="h-10 w-auto">
+            </div>
 
-            <a class=" navig " href="#home-page">Home</a>
-            <a class=" navig " href="#About-Us-page">About Us</a>
-            <a class=" navig " href="#inside-Kanto-page">Inside KANTOFFE</a>
-            <a class=" navig_border rounded p-2" href="#message-us-page">Message Us</a>
+            <button id="hamburger" class="text-white block md:hidden focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            </button>
+
+            <div id="nav-menu" class="hidden absolute md:static top-16 left-0 w-full md:w-auto bg-[#009ec5] md:bg-transparent md:flex flex-col md:flex-row items-center gap-8 p-6 md:p-0 jus md:justify-end">
+            
+                <a class="text-white font-medium hover:text-gray-200" href="#home-page">Home</a>
+            <a class="text-white font-medium hover:text-gray-200" href="#About-Us-page">About Us</a>
+            <a class="text-white font-medium hover:text-gray-200" href="#inside-Kanto-page">Inside KANTOFFE</a>
+            <a class="bg-white text-[#009ec5] px-5 py-2 rounded-full font-bold shadow-md hover:bg-gray-100 transition" href="#message-us-page">
+                Message Us</a> 
+            </div>
+
+            </div>
         </nav>
         
     </header>
@@ -45,7 +58,7 @@
             <p class="mt-4 text-lg mb-8 text-justify pl-15 pr-15">
             <strong>Kanto</strong> is your premier one-stop shopping destination designed for modern living. 
             We bridge the gap between product variety and effortless access, ensuring every household 
-             need—from fresh produce to the latest electronics—is available under one roof.</p>
+             need from fresh produce to the latest electronics is available under one roof.</p>
            
             <h2><strong>Why Choose Us?</strong></h2>
             <ul>
@@ -58,7 +71,7 @@
             <div class="kantoffe-notice-section text-justify-center pl-15 pr-15 mb-4">
             <h3><strong>Kantoffe Experience</strong></h3>
             <p class="mt-4 text-lg mb-8 text-justify">
-                Elevating your shopping routine, we recently launched <strong>Kantoffe</strong>—a modern 
+                Elevating your shopping routine, we recently launched <strong>Kantoffe</strong>, a modern 
                 café located exclusively within Kanto buildings nationwide. Enjoy premium coffee and a 
                 moment of relaxation right where you shop.
             </p>
@@ -98,8 +111,6 @@
             <a href="#" class="text-black font-bold underline decoration-2 underline-offset-4">Read More</a>
         </div>
         </div>
-        
-        
         </section>
 <hr>
         <!--Message Us Page-->

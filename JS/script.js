@@ -38,3 +38,24 @@ welcomeMessage();
 
     form.reset();
   });
+
+// Menangani toggle menu navigasi untuk mobile
+const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+// Toggle class 'hidden' untuk menampilkan/menyembunyikan menu
+    navMenu.classList.toggle('hidden');
+    navMenu.classList.toggle('flex'); 
+  });
+
+// Menyembunyikan menu saat link navigasi diklik (untuk mobile)
+  const navLinks = navMenu.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 768) { 
+        navMenu.classList.add('hidden');
+        navMenu.classList.remove('flex');
+      }
+    });
+  });
